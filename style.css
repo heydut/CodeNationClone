@@ -259,13 +259,15 @@ h3 {
 
 #cta-individual .cta-head,
 #cta-business .cta-head,
-#dates .section-dates .dates-header {
+#dates .section-dates .dates-header,
+#events .section-events .events-head {
   text-align: center;
 }
 
 #cta-individual .cta-head h2,
 #cta-business .cta-head h2,
-#dates .section-dates .dates-header h2 {
+#dates .section-dates .dates-header h2,
+#events .section-events .events-head h2 {
   color: #274b9e;
   font-family: "Gilroy-Bold", sans-serif;
   font-size: 86px;
@@ -275,9 +277,10 @@ h3 {
 
 #cta-individual .cta-head h3,
 #cta-business .cta-head h3,
-#dates .section-dates .dates-header h3 {
+#dates .section-dates .dates-header h3,
+#events .section-events .events-head h3 {
   color: #274b9e;
-  font-family: "Gilroy-ExtraBold", sans-serif;
+  font-family: "Gilroy-Bold", sans-serif;
   font-size: 28px;
   margin-bottom: 50px;
 }
@@ -333,7 +336,8 @@ h3 {
 
 #about,
 #about .about-text,
-#dates {
+#dates,
+#events {
   display: flex;
   justify-content: center;
 }
@@ -404,12 +408,14 @@ h3 {
 /**************************************************************/
 /* Dates */
 
-#dates .section-dates .dates-header h2 {
+#dates .section-dates .dates-header h2,
+#events .section-events .events-head h2 {
   margin-top: 50px;
   margin-bottom: 0px;
 }
 
-#dates .section-dates .dates-text {
+#dates .section-dates .dates-text,
+#events .section-events .events-text {
   display: flex;
   justify-content: center;
 }
@@ -420,14 +426,17 @@ h3 {
   width: 285px;
 }
 
-#dates .section-dates .dates-text h6 {
+#dates .section-dates .dates-text h6,
+#events .section-events .events-text h6 {
   color: #f5b32f;
-  font-family: "Gilroy-Regular", sans-serif;
+  font-family: "Gilroy-Light", sans-serif;
   font-size: 20px;
 }
 
 #dates .section-dates .dates-text h6,
-#dates .section-dates .dates-text p {
+#dates .section-dates .dates-text p,
+#events .section-events .events-text h6,
+#events .section-events .events-text p {
   margin-bottom: 15px;
 }
 
@@ -441,6 +450,7 @@ h3 {
 
 #dates .dates-button {
   margin-top: 70px;
+  margin-bottom: 35px;
 }
 
 #dates .dates-button a {
@@ -455,4 +465,38 @@ h3 {
   background-color: #fff;
   border: 3px solid #f5b32f;
   border-radius: 5px;
+}
+
+/**************************************************************/
+/* Upcoming events */
+
+#events {
+  background-color: transparent;
+  background-image: linear-gradient(135deg, #274b9e 50%, #237ab8 100%);
+}
+
+#events .section-events {
+  padding-bottom: 90px;
+}
+
+#events .section-events .events-head h2,
+#events .section-events .events-head h3,
+#events .section-events .events-text p {
+  color: #fff;
+  line-height: 1.5;
+}
+
+#events .section-events .events-text p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+#events .section-events .events-text div {
+  border-left: 2px solid #265ca7;
+  padding: 0 20px 0px 20px;
+  width: 370px;
+}
+
+#events .section-events .events-text .text-two h6:nth-child(2) {
+  color: #fff;
 }
