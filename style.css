@@ -260,14 +260,16 @@ h3 {
 #cta-individual .cta-head,
 #cta-business .cta-head,
 #dates .section-dates .dates-header,
-#events .section-events .events-head {
+#events .section-events .events-head,
+#faq .section-faq .faq-head {
   text-align: center;
 }
 
 #cta-individual .cta-head h2,
 #cta-business .cta-head h2,
 #dates .section-dates .dates-header h2,
-#events .section-events .events-head h2 {
+#events .section-events .events-head h2,
+#faq .section-faq .faq-head h2 {
   color: #274b9e;
   font-family: "Gilroy-Bold", sans-serif;
   font-size: 86px;
@@ -337,7 +339,8 @@ h3 {
 #about,
 #about .about-text,
 #dates,
-#events {
+#events,
+#faq {
   display: flex;
   justify-content: center;
 }
@@ -409,7 +412,8 @@ h3 {
 /* Dates */
 
 #dates .section-dates .dates-header h2,
-#events .section-events .events-head h2 {
+#events .section-events .events-head h2,
+#faq .section-faq .faq-head h2 {
   margin-top: 50px;
   margin-bottom: 0px;
 }
@@ -499,4 +503,36 @@ h3 {
 
 #events .section-events .events-text .text-two h6:nth-child(2) {
   color: #fff;
+}
+
+/**************************************************************/
+/* FAQ */
+
+hr {
+  border-top: 0.1px solid #d4d4d4;
+  opacity: 60%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#faq .section-faq {
+  padding: 10px;
+}
+
+#faq .section-faq .faq-head h2 {
+  margin-bottom: 45px;
+}
+
+#faq .section-faq .faq-body {
+  width: 1140px;
+  padding: 10px;
+}
+
+#faq .section-faq .faq-body p {
+  font-family: "Gilroy-Bold", sans-serif;
+  padding: 0 0 0 15px;
+}
+
+#faq .section-faq .faq-body i {
+  margin-right: 10px;
 }
