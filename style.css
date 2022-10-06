@@ -622,3 +622,50 @@ hr {
 #contact .section-contact .part-three .icon:nth-child(5) {
   background-color: #262626;
 }
+
+/**************************************************************/
+/* Footer */
+
+footer {
+  background-color: #1c1c1c;
+}
+#footer .footer {
+  display: flex;
+  margin: 40px 0px 40px 0px;
+  padding: 10px;
+}
+
+#footer .footer p,
+#footer .footer a {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Gilroy-Medium", sans-serif;
+}
+
+#footer .footer .footer-one img {
+  height: 40px;
+  width: 265px;
+  margin-bottom: 15px;
+}
+
+#footer .footer .footer-one p:nth-child(2) {
+  color: #f5b32f;
+}
+
+#footer .footer .footer-one,
+#footer .footer .footer-two {
+  text-align: left;
+  width: 285px;
+}
+
+#footer .footer .footer-three {
+  text-align: right;
+  width: 570px;
+}
+#footer .footer .footer-two p {
+  margin-bottom: 2.5px;
+}
+
+#footer .footer .footer-three p {
+  margin-bottom: 10px;
+}
