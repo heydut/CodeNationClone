@@ -340,7 +340,9 @@ h3 {
 #about .about-text,
 #dates,
 #events,
-#faq {
+#faq,
+#contact,
+#footer {
   display: flex;
   justify-content: center;
 }
@@ -535,4 +537,88 @@ hr {
 
 #faq .section-faq .faq-body i {
   margin-right: 10px;
+}
+
+/**************************************************************/
+/* Contact */
+
+#contact .section-contact {
+  display: flex;
+  padding: 10px;
+  margin-top: 60px;
+}
+
+#contact .section-contact ul {
+  list-style-type: none;
+}
+
+#contact .section-contact ul li {
+  margin-bottom: 15px;
+}
+
+#contact .section-contact .first-ul {
+  margin-bottom: 40px;
+}
+
+#contact .section-contact .part-one,
+#contact .section-contact .part-two,
+#contact .section-contact .part-three {
+  padding: 10px;
+  width: 380px;
+}
+
+#contact .section-contact h6 {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+#contact .section-contact a {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#contact .last-ctt {
+  margin-bottom: 100px;
+}
+
+#contact .section-contact .part-three .contact-icons {
+  display: flex;
+  align-items: center;
+}
+
+#contact .section-contact .part-three .icon {
+  background-color: #000;
+  border-radius: 50px;
+  margin-right: 10px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .section-contact .part-three .icon i {
+  color: #fff;
+  font-size: 30px;
+}
+
+#contact .section-contact .part-three .icon:nth-child(1) {
+  background-color: #3b5998;
+}
+
+#contact .section-contact .part-three .icon:nth-child(2) {
+  background-color: #0077b5;
+}
+#contact .section-contact .part-three .icon:nth-child(3) {
+  background-color: #cd201f;
+}
+
+#contact .section-contact .part-three .icon:nth-child(4) {
+  background-color: #1da1f2;
+}
+
+#contact .section-contact .part-three .icon:nth-child(5) {
+  background-color: #262626;
 }
