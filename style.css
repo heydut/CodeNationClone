@@ -258,12 +258,14 @@ h3 {
 }
 
 #cta-individual .cta-head,
-#cta-business .cta-head {
+#cta-business .cta-head,
+#dates .section-dates .dates-header {
   text-align: center;
 }
 
 #cta-individual .cta-head h2,
-#cta-business .cta-head h2 {
+#cta-business .cta-head h2,
+#dates .section-dates .dates-header h2 {
   color: #274b9e;
   font-family: "Gilroy-Bold", sans-serif;
   font-size: 86px;
@@ -272,7 +274,8 @@ h3 {
 }
 
 #cta-individual .cta-head h3,
-#cta-business .cta-head h3 {
+#cta-business .cta-head h3,
+#dates .section-dates .dates-header h3 {
   color: #274b9e;
   font-family: "Gilroy-ExtraBold", sans-serif;
   font-size: 28px;
@@ -329,7 +332,8 @@ h3 {
 /* About */
 
 #about,
-#about .about-text {
+#about .about-text,
+#dates {
   display: flex;
   justify-content: center;
 }
@@ -395,5 +399,60 @@ h3 {
   border: 3px solid #f5b32f;
   border-radius: 5px;
   font-size: 16px;
-  height: 46px;
+}
+
+/**************************************************************/
+/* Dates */
+
+#dates .section-dates .dates-header h2 {
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+#dates .section-dates .dates-text {
+  display: flex;
+  justify-content: center;
+}
+
+#dates .section-dates .dates-text div {
+  border-left: 2px solid #e0e0e0;
+  padding: 10px;
+  width: 285px;
+}
+
+#dates .section-dates .dates-text h6 {
+  color: #f5b32f;
+  font-family: "Gilroy-Regular", sans-serif;
+  font-size: 20px;
+}
+
+#dates .section-dates .dates-text h6,
+#dates .section-dates .dates-text p {
+  margin-bottom: 15px;
+}
+
+#dates .section-dates .dates-text .text-four .last-p {
+  margin-bottom: 0px;
+}
+
+#dates .section-dates .dates-text p {
+  color: #274b9e;
+}
+
+#dates .dates-button {
+  margin-top: 70px;
+}
+
+#dates .dates-button a {
+  font-size: 15px;
+}
+
+#dates .dates-button a:nth-child(1) {
+  border: 3px solid #f5b32f;
+}
+
+#dates .dates-btn-orange {
+  background-color: #fff;
+  border: 3px solid #f5b32f;
+  border-radius: 5px;
 }
