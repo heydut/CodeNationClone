@@ -80,7 +80,7 @@ a {
 nav {
   background-color: #fff;
   height: 80px;
-  width: 100%;
+  width: 100vw;
 
   display: flex;
   align-items: center;
@@ -92,7 +92,7 @@ nav {
   z-index: 10;
 }
 
-div .logo img {
+.logo img {
   width: 253px;
   height: 40px;
 }
@@ -125,6 +125,10 @@ div .logo img {
   padding-left: 5px;
 }
 
+#nav-bar .nav-bar-menu a:last-child {
+  display: none;
+}
+
 #nav-bar .nav-bar-menu .join-contact {
   color: #8498a2;
 }
@@ -145,6 +149,7 @@ div .logo img {
 #cta {
   display: flex;
   justify-content: center;
+  max-width: 95vw;
 }
 
 #image-slides {
@@ -165,6 +170,7 @@ div .logo img {
   object-fit: cover;
   height: 200px;
   width: 265px;
+  max-width: 100%;
 }
 
 #image-slides .left-side-one img:nth-child(1),
@@ -182,6 +188,7 @@ div .logo img {
   object-fit: cover;
   width: 550px;
   height: auto;
+  max-width: 100%;
 }
 
 #image-slides .right-side h1 {
@@ -190,8 +197,8 @@ div .logo img {
   position: absolute;
   text-align: right;
   line-height: 1;
-  top: 280px;
-  right: 30px;
+  bottom: 20px;
+  right: 20px;
 }
 
 /**************************************************************/
@@ -256,6 +263,7 @@ h3 {
   background-color: #f6f6f6;
   padding-top: 1px;
   padding-bottom: 100px;
+  margin: 0 auto;
 }
 
 #cta-individual .cta-head,
@@ -292,6 +300,7 @@ h3 {
 #cta-business .cta-body {
   display: flex;
   justify-content: center;
+  max-width: 100vw;
 }
 
 #cta-individual .cta-body .cta-text,
@@ -325,6 +334,7 @@ h3 {
 #cta-business .cta-body .cta-side {
   padding: 10px;
   width: 605px;
+  max-width: 50%;
 }
 
 #cta-individual .cta-body .cta-side img,
@@ -332,6 +342,7 @@ h3 {
   object-fit: cover;
   height: 100%;
   width: 585px;
+  max-width: 100%;
 }
 
 /**************************************************************/
@@ -351,6 +362,7 @@ h3 {
 #about .section-about {
   width: 800px;
   padding: 10px;
+  max-width: 100vw;
 }
 
 #about .about-header,
@@ -425,6 +437,8 @@ h3 {
 #events .section-events .events-text {
   display: flex;
   justify-content: center;
+  padding: 10px;
+  max-width: 100vw;
 }
 
 #dates .section-dates .dates-text div {
@@ -484,6 +498,7 @@ h3 {
 
 #events .section-events {
   padding-bottom: 90px;
+  max-width: 100vw;
 }
 
 #events .section-events .events-head h2,
@@ -520,6 +535,7 @@ hr {
 
 #faq .section-faq {
   padding: 10px;
+  max-width: 100vw;
 }
 
 #faq .section-faq .faq-head h2 {
@@ -669,4 +685,196 @@ footer {
 
 #footer .footer .footer-three p {
   margin-bottom: 10px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #events .section-events .events-text {
+    flex-direction: column;
+  }
+
+  #events .section-events .events-text div {
+    width: auto;
+    margin-bottom: 50px;
+  }
+
+  #events .section-events .events-head h2 {
+    font-size: 78px;
+    line-height: 1;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 800px) {
+  /* Nav bar */
+  .logo img {
+    margin-top: 20px;
+    width: 350px;
+    height: auto;
+  }
+
+  #nav-bar .nav-bar-menu .hid {
+    display: none;
+  }
+
+  #nav-bar .nav-bar-menu a:last-child {
+    font-size: 32px;
+    display: block;
+    margin-right: 5%;
+  }
+
+  /* Slides */
+
+  #image-slides {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #image-slides .left-side-one {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px;
+  }
+
+  #image-slides .left-side-one img {
+    width: 50%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  #image-slides .left-side-one img:nth-child(1) {
+    margin-right: 10px;
+  }
+
+  #image-slides .left-side-two {
+    display: none;
+  }
+
+  #image-slides .right-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #image-slides .right-side img {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+
+  #image-slides .right-side h1 {
+    /* font-size: 40px; */
+  }
+
+  /* CTA */
+  #cta h2 {
+    font-size: 28px;
+  }
+  #cta h3 {
+    font-size: 26px;
+  }
+
+  /* New cta individual and business*/
+  #cta-individual .cta-body,
+  #cta-business .cta-body {
+    flex-direction: column;
+  }
+
+  #cta-individual .cta-body .cta-side,
+  #cta-business .cta-body .cta-side {
+    max-width: 100%;
+  }
+  #cta-individual .cta-body .cta-text,
+  #cta-business .cta-body .cta-text {
+    width: auto;
+  }
+
+  #cta-individual .cta-body .cta-text .cta-text-button,
+  #cta-business .cta-body .cta-text .cta-text-button {
+    text-align: center;
+  }
+  /* About */
+  #about .about-text {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about .section-about .about-text .about-left-text {
+    padding-right: 0px;
+  }
+  #about .section-about .about-text .about-left-text,
+  #about .section-about .about-text .about-right-text {
+    padding: 0 20px;
+    width: 100vw;
+  }
+  /* Dates */
+
+  #dates .section-dates {
+    padding: 100px;
+  }
+
+  #dates .section-dates .dates-text {
+    flex-direction: column;
+  }
+
+  #dates .section-dates .dates-text div {
+    width: auto;
+  }
+
+  #dates .dates-button {
+    text-align: center;
+  }
+
+  /* Upcoming events */
+  #events .section-events .events-text a {
+    font-size: 13px;
+  }
+
+  /* FAQ */
+
+  #faq .section-faq .faq-head h2 {
+    font-size: 40px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  /* Nav bar */
+  .logo img {
+    width: 200px;
+    height: 30px;
+  }
+  #nav-bar .logo {
+    margin-left: 3%;
+  }
+  #nav-bar .nav-bar-menu {
+    margin-right: 3%;
+  }
+  #nav-bar .nav-bar-menu a {
+    font-size: 15px;
+    margin: 0px 0px 0px 5px;
+  }
+  .nav-button-p {
+    padding: 10px 15px;
+  }
+
+  /* Slides */
+  #image-slides .left-side-one img,
+  #image-slides .left-side-two img {
+    max-height: 110px;
+  }
+
+  #image-slides .right-side img {
+    max-height: 230px;
+  }
+
+  #image-slides .right-side h1 {
+    font-size: 52px;
+  }
+
+  /* New cta individual and business*/
+  #cta-individual .cta-body .cta-side img,
+  #cta-business .cta-body .cta-side img {
+    height: 100%;
+  }
 }
